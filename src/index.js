@@ -769,8 +769,7 @@ function getHTML() {
     }
 
     return new Response('Not Found', { status: 404 });
-  },
-
+  }
   async scheduled(event, env, ctx) {
     await checkAndSendReminders(env);
   }
