@@ -130,3 +130,6 @@ export function getSafeConfig(type, config) {
   }
   return PUSH_SERVICES[type].getSafeConfig(config);
 }
+
+// 导出推送服务配置
+export { PUSH_SERVICES };
