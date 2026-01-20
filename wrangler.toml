@@ -21,3 +21,7 @@ ADMIN_PASSWORD = "admin123456"
 # 生产环境配置示例（取消注释并修改）：
 # INVITE_CODE = "your-custom-invite-code"
 # ADMIN_PASSWORD = "your-secure-admin-password"
+
+# 生产环境配置
+[env.production]
+workers_dev = false

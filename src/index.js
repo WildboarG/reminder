@@ -711,21 +711,6 @@ function getHTML() {
 </body>
 </html>`;
 }
-
-export default {
-  async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-    const path = url.pathname;
-    const clientIP = request.headers.get('cf-connecting-ip') || 'unknown';
-
-    if (path === '/' || path === '/index.html') {
-      return new Response(getHTML(), {
-        headers: {
-          'Content-Type': 'text/html; charset=utf-8',
-          'X-Content-Type-Options': 'nosniff',
-          'X-Frame-Options': 'DENY',
-          'X-XSS-Protection': '1; mode=block'
-        }
       });
     }
 
