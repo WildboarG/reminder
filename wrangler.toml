@@ -25,3 +25,14 @@ ADMIN_PASSWORD = "admin123456"
 # 生产环境配置
 [env.production]
 workers_dev = false
+
+# 生产环境的变量配置（不会继承顶级配置）
+[env.production.vars]
+INVITE_CODE = "123456"
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "admin123456"
+
+# 生产环境的 KV 配置（不会继承顶级配置）
+[[env.production.kv_namespaces]]
+binding = "REMINDERS_KV"
+id = "34ea2a47555c4d52a4ba18309654768a"

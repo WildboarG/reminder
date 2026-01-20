@@ -707,12 +707,10 @@ function getHTML() {
         }
       });
     }
-  </script>
+   </script>
 </body>
 </html>`;
 }
-      });
-    }
 
     if (path === '/api/auth/register' && request.method === 'POST') {
       return await handleRegister(request, env, clientIP);
