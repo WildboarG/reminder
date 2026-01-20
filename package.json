@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare-reminder",
+  "version": "2.0.0",
+  "description": "基于 Cloudflare Worker 的时间提醒服务 - 含密码认证和粒子动画效果",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node local-server.js",
+    "deploy": "npx wrangler deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240117.0"
+  }
+}

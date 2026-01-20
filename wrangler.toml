@@ -1,0 +1,23 @@
+name = "cloudflare-reminder"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "REMINDERS_KV"
+id = "34ea2a47555c4d52a4ba18309654768a"
+
+[triggers]
+crons = ["0 8 * * *"]
+
+[vars]
+# 用户注册邀请码 - 可在 Cloudflare Dashboard 或 GitHub Secrets 中修改
+INVITE_CODE = "123456"
+# 管理员用户名 - 固定为 admin，不可修改
+ADMIN_USERNAME = "admin"
+# 管理员密码 - 建议在生产环境修改为强密码
+ADMIN_PASSWORD = "admin123456"
+
+# 生产环境配置示例（取消注释并修改）：
+# INVITE_CODE = "your-custom-invite-code"
+# ADMIN_PASSWORD = "your-secure-admin-password"
