@@ -221,11 +221,11 @@ function getHTML() {
             <label>通知声音 (可选)</label>
             <div class="sound-options">
               <div class="sound-option" data-sound="" onclick="selectSound(this)">无</div>
-              <div class="sound-option" data-sound="bells" onclick="selectSound(this)">bloom</div>
-              <div class="sound-option" data-sound="california" onclick="selectSound(this)">chime</div>
-              <div class="sound-option" data-sound="chime" onclick="selectSound(this)">choo</div>
-              <div class="sound-option" data-sound="glass" onclick="selectSound(this)">glass</div>
-              <div class="sound-option" data-sound="notification" onclick="selectSound(this)">paymentsuccess</div>
+              <div class="sound-option" data-sound="bloom" onclick="selectSound(this)">绽放</div>
+              <div class="sound-option" data-sound="chime" onclick="selectSound(this)">铃铛</div>
+              <div class="sound-option" data-sound="choo" onclick="selectSound(this)">汽笛</div>
+              <div class="sound-option" data-sound="glass" onclick="selectSound(this)">订餐</div>
+              <div class="sound-option" data-sound="paymentsuccess" onclick="selectSound(this)">水滴</div>
             </div>
           </div>
         </div>
